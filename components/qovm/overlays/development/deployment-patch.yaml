@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: qovm
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: POC
+          value: POC
+        image: quay.io/redhat-appstudio-qe/byoc-aghv-tenant/byoc-app-covk/qovm@sha256:25c8e1a65bf0f3684fc070d7b7a450fbb523b29782a8bcc73ceb9f3c05cd3b1a
+        name: my-java-quarkus
+        resources: {}
+status: {}
