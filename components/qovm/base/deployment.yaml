@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: qovm
     spec:
       containers:
-      - image: java-quarkus-image:latest
+      - image: quay.io/redhat-appstudio-qe/byoc-aghv-tenant/byoc-app-covk/qovm@sha256:25c8e1a65bf0f3684fc070d7b7a450fbb523b29782a8bcc73ceb9f3c05cd3b1a
         name: my-java-quarkus
         ports:
         - containerPort: 8081
